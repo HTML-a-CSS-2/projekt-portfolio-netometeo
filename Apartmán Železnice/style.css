@@ -1,0 +1,38 @@
+.header {
+  width: 90%;
+}
+
+.blok {
+  width: 500px;
+  height: 500px;
+  background-color: grey;
+}
+
+.blok-2 {
+  width: 100%;
+  height: 4rem;
+}
+
+.navigace__ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+
+
+.blok__foto {
+  width: 100%;
+  height: 100%;
+}
+
+.blok-2__foto {
+  width: 15rem;
+  height: 15rem;
+}
+
+.footer__icon {
+  height: 35px;
+  width: 35px;
+}
