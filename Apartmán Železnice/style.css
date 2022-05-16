@@ -1,5 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1.5fr 0.05fr;
+}
+
 .header {
-  width: 100%;
+  grid-column-end: span 2;
   background-color: black;
 }
 
@@ -20,7 +26,7 @@
 }
 
 .blok-2 {
-  width: 100%;
+  grid-column-end: span 2;
   background-color: black;
 }
 
