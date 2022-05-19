@@ -1,7 +1,9 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px 1fr));
+  grid-template-columns: repeat(2, minmax(min-content 1fr));
   grid-template-rows: 1.5fr 1fr 1fr 1.5fr 0.05fr;
+  align-items: auto;
+  justify-items: auto; 
 }
 
 .header {
@@ -23,18 +25,21 @@
   width: 500px;
   height: 500px;
   background-color: grey;
+  place-self: auto center;
 }
 
 .blok-2 {
   grid-column-end: span 2;
   background-color: black;
+  grid-column-start: 1;
+  place-self: auto;
 }
 
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: lightgrey;
+  grid-column: 1 / span 2;
+  align-self: baseline;
+  grid-area: footer;
 }
 
 .header__p {
@@ -146,6 +151,10 @@ padding: 2rem;
 
 .blok-2__h1--bigsize {
   font-size: 50px;
+}
+
+blok-2--fotogalerie {
+  grid-area: fotogalerie;
 }
 
 .blok--black {
