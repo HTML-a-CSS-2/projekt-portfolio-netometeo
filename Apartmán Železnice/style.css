@@ -120,47 +120,6 @@ padding: 2rem;
   width: 35px;
 }
 
-.blok--bigSize {
-  width: 700px;
-  height: 700px;
-}
-
-.blok__h1--red {
-  color: red;
-}
-
-.blok--beige {
-  background-color:beige;
-}
-
-.blok__p--red {
-  color: red;
-}
-
-.blok__p--mediumSize {
-  font-size: 20px;
-}
-
-.blok_h1--beige {
-  color:beige;
-}
-
-.blok-2__h1--beige {
-  color:beige;
-}
-
-.blok-2__h1--bigsize {
-  font-size: 50px;
-}
-
 blok-2--fotogalerie {
   grid-area: fotogalerie;
-}
-
-.blok--black {
-  background-color:black;
-}
-
-.blok__li--beige {
-  color:beige;
 }
