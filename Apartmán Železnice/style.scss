@@ -1,14 +1,24 @@
+$mainBGColor: black;
+$mainColor: beige;
+$mainWidth: 100%;
+$mainPadding: 10px;
+$TextFontSize: 15px;
+$MediumFontSize: 20px;
+$BigFontSize: 40px;
+$IconSize: 30px;
+
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content 1fr));
-  grid-template-rows: 1.5fr 1fr 1fr 1.5fr 0.05fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 1fr 0.05fr;
   align-items: auto;
   justify-items: auto; 
 }
 
 .header {
   grid-column-end: span 2;
-  background-color: black;
+  background-color: $mainBGColor;
 }
 
 .navigace {
@@ -16,21 +26,21 @@
 }
 
 .cover {
-  width: 100%;
+  width: $mainWidth;
   padding:0;
-  margin:0px;
+  margin:0;
 }
 
 .blok {
   width: 500px;
   height: 500px;
-  background-color: black;
+  background-color: $mainBGColor;
   place-self: auto center;
 }
 
 .blok-2 {
   grid-column-end: span 2;
-  background-color: black;
+  background-color: $mainBGColor;
   grid-column-start: 1;
   place-self: auto;
 }
@@ -42,7 +52,7 @@
 }
 
 .header__p {
-  font-size: 20px;
+  font-size: $MediumFontSize;
   color: silver;
 }
 
@@ -54,32 +64,32 @@
 }
 
 .navigace__li {
-font-size: 15px;
+font-size: $TextFontSize;
 color: white;
 }
 
 .cover__foto {
-  width: 100%;
+  width: $mainWidth;
   height: 100%;
   padding-top:12px;
 }
 
 .cover__h1 {
-  font-size: 40px;
+  font-size: $BigFontSize;
   color: white;
 }
 
 .blok__h1 {
-  font-size: 20px;
-  color: beige;
-  padding: 10px;
+  font-size: $MediumFontSize;
+  color: $mainColor;
+  padding: $mainPadding;
   text-align: center;
 }
 
 .blok__p {
-  font-size: 15px;
-  color: beige;
-  padding: 8px;
+  font-size: $TextFontSize;
+  color: $mainColor;
+  padding: $mainPadding;
   text-align: block;
 }
 
@@ -88,8 +98,8 @@ color: white;
 }
 
 .blok__li {
-  font-size:16px;
-  color: beige;
+  font-size:$TextFontSize;
+  color: $mainColor;
 }
 
 .blok__foto {
@@ -98,7 +108,7 @@ color: white;
 }
 
 .blok__img {
-  width: 100%;
+  width: $mainWidth;
   height: 100%;
   position: absolute;
   top:0;
@@ -106,7 +116,7 @@ color: white;
 }
 
 .blok-2__fotogalerie {
-  background-color: black;
+  background-color: $mainBGColor;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   grid-template-rows: repeat(auto-fit, minmax(200px,1fr));
@@ -114,9 +124,9 @@ color: white;
 }
 
 .blok-2__h1 {
-  font-size: 40px;
+  font-size: $BigFontSize;
   color: white;
-  padding: 10px;
+  padding: $mainPadding;
   text-align: left;
 }
 
@@ -133,7 +143,7 @@ color: white;
 }
 
 .footer__icon {
-  padding: 5px;
-  height: 35px;
-  width: 35px;
+  padding: $mainPadding;
+  height: $IconSize;
+  width: $IconSize;
 }

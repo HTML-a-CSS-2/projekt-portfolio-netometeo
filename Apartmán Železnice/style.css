@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(-webkit-min-content 1fr));
   grid-template-columns: repeat(2, minmax(min-content 1fr));
-  grid-template-rows: 1.5fr 1fr 1fr 1.5fr 0.05fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 1fr 0.05fr;
   align-items: auto;
   justify-items: auto;
 }
@@ -19,7 +19,7 @@
 .cover {
   width: 100%;
   padding: 0;
-  margin: 0px;
+  margin: 0;
 }
 
 .blok {
@@ -80,7 +80,7 @@
 .blok__p {
   font-size: 15px;
   color: beige;
-  padding: 8px;
+  padding: 10px;
   text-align: block;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .blok__li {
-  font-size: 16px;
+  font-size: 15px;
   color: beige;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .footer__icon {
-  padding: 5px;
-  height: 35px;
-  width: 35px;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */
