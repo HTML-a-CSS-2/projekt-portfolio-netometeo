@@ -13,6 +13,11 @@ $IconSize: 30px;
   grid-template-rows: 1fr 0.5fr 0.5fr 0.6fr 0.05fr;
 }
 
+@mixin WidthHeight500() {
+  width: 500px;
+  height: 500px;
+}
+
 
 .container {
   @include grid();
@@ -36,8 +41,7 @@ $IconSize: 30px;
 }
 
 .blok {
-  width: 500px;
-  height: 500px;
+  @include WidthHeight500();
   background-color: $mainBGColor;
   place-self: auto center;
 }
