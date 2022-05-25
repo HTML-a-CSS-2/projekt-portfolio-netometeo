@@ -17,14 +17,14 @@
 
 .cover {
   width: 100%;
-  padding:0px;
+  padding:0;
   margin:0px;
 }
 
 .blok {
   width: 500px;
   height: 500px;
-  background-color: grey;
+  background-color: black;
   place-self: auto center;
 }
 
@@ -36,10 +36,9 @@
 }
 
 .footer {
-  background-color: lightgrey;
+  background-color: white;
   grid-column: 1 / span 2;
   align-self: baseline;
-  grid-area: footer;
 }
 
 .header__p {
@@ -61,6 +60,7 @@ color: white;
 
 .cover__foto {
   width: 100%;
+  height: 100%;
   padding-top:12px;
 }
 
@@ -71,14 +71,14 @@ color: white;
 
 .blok__h1 {
   font-size: 20px;
-  color: black;
+  color: beige;
   padding: 10px;
   text-align: center;
 }
 
 .blok__p {
   font-size: 15px;
-  color: black;
+  color: beige;
   padding: 8px;
   text-align: block;
 }
@@ -89,17 +89,28 @@ color: white;
 
 .blok__li {
   font-size:16px;
-  color: black;
+  color: beige;
 }
 
 .blok__foto {
+  position: relative;
+  padding:0%;
+}
+
+.blok__img {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top:0;
+  object-fit: cover;
 }
 
 .blok-2__fotogalerie {
-background-color: black;
-padding: 2rem;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px,1fr));
+  gap: 2rem;
 }
 
 .blok-2__h1 {
@@ -109,9 +120,16 @@ padding: 2rem;
   text-align: left;
 }
 
-.blok-2__foto {
-  width: 15rem;
-  height: 15rem;
+.blok__foto {
+  position: relative;
+  padding-top: 100%;
+}
+
+.blok-2__img {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  object-fit: cover;
 }
 
 .footer__icon {
@@ -120,6 +138,3 @@ padding: 2rem;
   width: 35px;
 }
 
-blok-2--fotogalerie {
-  grid-area: fotogalerie;
-}
