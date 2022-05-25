@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(-webkit-min-content 1fr));
   grid-template-columns: repeat(2, minmax(min-content 1fr));
-  grid-template-rows: 1fr 0.5fr 0.5fr 1fr 0.05fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.6fr 0.05fr;
   align-items: auto;
   justify-items: auto;
 }
@@ -54,7 +54,7 @@
   padding: 0;
 }
 
-.navigace__li {
+nav li {
   font-size: 15px;
   color: white;
 }
