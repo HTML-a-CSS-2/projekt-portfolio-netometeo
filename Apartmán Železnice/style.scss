@@ -7,11 +7,15 @@ $MediumFontSize: 20px;
 $BigFontSize: 40px;
 $IconSize: 30px;
 
-
-.container {
+@mixin grid() {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content 1fr));
   grid-template-rows: 1fr 0.5fr 0.5fr 0.6fr 0.05fr;
+}
+
+
+.container {
+  @include grid();
   align-items: auto;
   justify-items: auto; 
 }
