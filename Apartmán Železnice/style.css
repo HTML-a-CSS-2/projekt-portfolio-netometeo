@@ -85,7 +85,7 @@ nav li {
 }
 
 .blok_ul {
-  list-style: square;
+  list-style: none;
 }
 
 .blok__li {

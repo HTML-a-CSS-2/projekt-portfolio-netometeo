@@ -1,4 +1,5 @@
 $mainBGColor: black;
+$SecondBGColor: white;
 $mainColor: beige;
 $mainWidth: 100%;
 $mainPadding: 10px;
@@ -6,6 +7,8 @@ $TextFontSize: 15px;
 $MediumFontSize: 20px;
 $BigFontSize: 40px;
 $IconSize: 30px;
+$BasicListStyle: none;
+
 
 @mixin grid() {
   display: grid;
@@ -54,7 +57,7 @@ $IconSize: 30px;
 }
 
 .footer {
-  background-color: white;
+  background-color: $SecondBGColor;
   grid-column: 1 / span 2;
   align-self: baseline;
 }
@@ -66,7 +69,7 @@ $IconSize: 30px;
 
 .navigace__ul {
   display: flex;
-  list-style: none;
+  list-style: $BasicListStyle;
   justify-content: space-between;
   padding: 0;
 }
@@ -102,7 +105,7 @@ nav {
 }
 
 .blok_ul {
-  list-style: square;
+  list-style: $BasicListStyle;
 }
 
 .blok__li {
