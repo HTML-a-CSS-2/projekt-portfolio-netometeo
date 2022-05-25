@@ -74,9 +74,9 @@ nav {
   padding-top:12px;
 }
 
-.cover__h1 {
-  font-size: $BigFontSize;
-  color: white;
+.cover {
+  &__h1 {font-size: $BigFontSize;
+  color: white;}
 }
 
 .blok__h1 {
