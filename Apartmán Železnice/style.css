@@ -1,9 +1,10 @@
 .container {
   display: grid;
+  grid-template-columns: repeat(2, minmax(-webkit-min-content 1fr));
   grid-template-columns: repeat(2, minmax(min-content 1fr));
-  grid-template-rows: 1.5fr 1fr 1fr 1.5fr 0.05fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.6fr 0.05fr;
   align-items: auto;
-  justify-items: auto; 
+  justify-items: auto;
 }
 
 .header {
@@ -12,19 +13,19 @@
 }
 
 .navigace {
-  padding:0.5rem;
+  padding: 0.5rem;
 }
 
 .cover {
   width: 100%;
-  padding:0px;
-  margin:0px;
+  padding: 0;
+  margin: 0;
 }
 
 .blok {
   width: 500px;
   height: 500px;
-  background-color: grey;
+  background-color: black;
   place-self: auto center;
 }
 
@@ -36,10 +37,9 @@
 }
 
 .footer {
-  background-color: lightgrey;
-  grid-column: 1 / span 2;
+  background-color: white;
+  grid-column: 1/span 2;
   align-self: baseline;
-  grid-area: footer;
 }
 
 .header__p {
@@ -54,14 +54,15 @@
   padding: 0;
 }
 
-.navigace__li {
-font-size: 15px;
-color: white;
+nav li {
+  font-size: 15px;
+  color: white;
 }
 
 .cover__foto {
   width: 100%;
-  padding-top:12px;
+  height: 100%;
+  padding-top: 12px;
 }
 
 .cover__h1 {
@@ -71,35 +72,47 @@ color: white;
 
 .blok__h1 {
   font-size: 20px;
-  color: black;
+  color: beige;
   padding: 10px;
   text-align: center;
 }
 
 .blok__p {
   font-size: 15px;
-  color: black;
-  padding: 8px;
+  color: beige;
+  padding: 10px;
   text-align: block;
 }
 
 .blok_ul {
-  list-style: square;
+  list-style: none;
 }
 
 .blok__li {
-  font-size:16px;
-  color: black;
+  font-size: 15px;
+  color: beige;
 }
 
 .blok__foto {
+  position: relative;
+  padding: 0%;
+}
+
+.blok__img {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blok-2__fotogalerie {
-background-color: black;
-padding: 2rem;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
 }
 
 .blok-2__h1 {
@@ -109,17 +122,21 @@ padding: 2rem;
   text-align: left;
 }
 
-.blok-2__foto {
-  width: 15rem;
-  height: 15rem;
+.blok__foto {
+  position: relative;
+  padding-top: 100%;
+}
+
+.blok-2__img {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer__icon {
-  padding: 5px;
-  height: 35px;
-  width: 35px;
-}
-
-blok-2--fotogalerie {
-  grid-area: fotogalerie;
-}
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+}/*# sourceMappingURL=style.css.map */

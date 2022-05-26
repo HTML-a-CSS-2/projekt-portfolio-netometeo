@@ -1,0 +1,160 @@
+$mainBGColor: black;
+$SecondBGColor: white;
+$mainColor: beige;
+$mainWidth: 100%;
+$mainPadding: 10px;
+$TextFontSize: 15px;
+$MediumFontSize: 20px;
+$BigFontSize: 40px;
+$IconSize: 30px;
+$BasicListStyle: none;
+
+
+@mixin grid() {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content 1fr));
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.6fr 0.05fr;
+}
+
+@mixin WidthHeight500() {
+  width: 500px;
+  height: 500px;
+}
+
+
+.container {
+  @include grid();
+  align-items: auto;
+  justify-items: auto; 
+}
+
+.header {
+  grid-column-end: span 2;
+  background-color: $mainBGColor;
+}
+
+.navigace {
+  padding:0.5rem;
+}
+
+.cover {
+  width: $mainWidth;
+  padding:0;
+  margin:0;
+}
+
+.blok {
+  @include WidthHeight500();
+  background-color: $mainBGColor;
+  place-self: auto center;
+}
+
+.blok-2 {
+  grid-column-end: span 2;
+  background-color: $mainBGColor;
+  grid-column-start: 1;
+  place-self: auto;
+}
+
+.footer {
+  background-color: $SecondBGColor;
+  grid-column: 1 / span 2;
+  align-self: baseline;
+}
+
+.header__p {
+  font-size: $MediumFontSize;
+  color: silver;
+}
+
+.navigace__ul {
+  display: flex;
+  list-style: $BasicListStyle;
+  justify-content: space-between;
+  padding: 0;
+}
+
+nav {
+  li {font-size: $TextFontSize;
+  color: white;}
+}
+
+.cover__foto {
+  width: $mainWidth;
+  height: 100%;
+  padding-top:12px;
+}
+
+.cover {
+  &__h1 {font-size: $BigFontSize;
+  color: white;}
+}
+
+.blok__h1 {
+  font-size: $MediumFontSize;
+  color: $mainColor;
+  padding: $mainPadding;
+  text-align: center;
+}
+
+.blok__p {
+  font-size: $TextFontSize;
+  color: $mainColor;
+  padding: $mainPadding;
+  text-align: block;
+}
+
+.blok_ul {
+  list-style: $BasicListStyle;
+}
+
+.blok__li {
+  font-size:$TextFontSize;
+  color: $mainColor;
+}
+
+.blok__foto {
+  position: relative;
+  padding:0%;
+}
+
+.blok__img {
+  width: $mainWidth;
+  height: 100%;
+  position: absolute;
+  top:0;
+  object-fit: cover;
+}
+
+.blok-2__fotogalerie {
+  background-color: $mainBGColor;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px,1fr));
+  gap: 2rem;
+}
+
+.blok-2__h1 {
+  font-size: $BigFontSize;
+  color: white;
+  padding: $mainPadding;
+  text-align: left;
+}
+
+.blok__foto {
+  position: relative;
+  padding-top: 100%;
+}
+
+.blok-2__img {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  object-fit: cover;
+}
+
+.footer__icon {
+  padding: $mainPadding;
+  height: $IconSize;
+  width: $IconSize;
+}
