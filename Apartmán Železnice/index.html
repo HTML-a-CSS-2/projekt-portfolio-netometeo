@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <title>Apartmán Železnice</title>
 
-  <!-- odevzdání stage4 -->
+  <!-- základ pro stage3 po schválení stage 2 + responzivní fotogalerie -->
 </head>
 <body>
    <div class="container">
@@ -25,37 +25,14 @@
         </ul>
       </nav>
       <div class="cover">
-        <img class="cover__foto"
-        src="images/cover-1000x660.JPG"
-        alt="coverfoto"
-        srcset="
-          images/cover-500x330.JPG 500w,
-          images/cover-1000x660.JPG 1000w,
-          images/cover.JPG 1500w
-        "
-        width="1000"
-        height="660">
+        <img class="cover__foto" src="images/cover.JPG">
         <h1 class=" cover__h1">Jedinečné ubytování <br>v Českém ráji</h1>
       </div>
-
     </section>
     <div class="blok">
       <div class="blok__foto">
-        <picture>
-          <source
-            srcset="images/loznice-500x330.JPG"
-            media="(max-width: 600px)"
-          />
-
-          <source
-            srcset="images/loznice.JPG"
-            media="(min-width: 1000px)"
-          />
-
-          <img class="blok__img" src="images/loznice-1000x660.JPG">
-
-        </picture>
-      </div>
+      <img class="blok__img" src="images/loznice.JPG">
+      </div>      
     </div>
 
     <div class="blok">
@@ -118,13 +95,13 @@
     
     <footer class="footer">
       <a href="tel:+420739066960">
-        <img class="footer__icon" src="images/icons/phone.svg">
+        <img class="footer__icon" src="images/icons/phone.png">
       </a>
       <a href="https://www.facebook.com/apartmanyzeleznice">
-        <img class="footer__icon" src="images/icons/facebook.svg">
+        <img class="footer__icon" src="images/icons/facebook.png">
       </a>
       <a href="https://www.instagram.com/apartman_zeleznice/?hl=cs">
-        <img class="footer__icon" src="images/icons/instagram.svg">
+        <img class="footer__icon" src="images/icons/instagram.png">
       </a>
     </footer>
   </div>
