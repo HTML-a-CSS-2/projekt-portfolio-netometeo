@@ -21,6 +21,10 @@ $BasicListStyle: none;
   height: 500px;
 }
 
+html, body {
+  margin:0;
+  padding:0;
+}
 
 .container {
   @include grid();
@@ -35,6 +39,7 @@ $BasicListStyle: none;
 
 .navigace {
   padding:0.5rem;
+
 }
 
 .cover {
@@ -63,12 +68,13 @@ $BasicListStyle: none;
   align-self: baseline;
 }
 
-.header__p {
-  font-size: $MediumFontSize;
-  color: silver;
+.header__logo {
+  height: 100px;
+  width: 100px;
 }
 
 .navigace__ul {
+  flex-direction: row;
   display: flex;
   list-style: $BasicListStyle;
   justify-content: space-between;
@@ -77,7 +83,24 @@ $BasicListStyle: none;
 
 nav {
   li {font-size: $TextFontSize;
-  color: white;}
+    width: 200px;
+    height: 50px;
+    background-color: $mainBGColor;
+    color: white;
+    }
+  li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  li:hover {
+    text-decoration: underline;
+    }
 }
 
 .cover__foto {

@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(-webkit-min-content 1fr));
@@ -17,7 +22,8 @@
 }
 
 .cover {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   padding: 0;
   margin: 0;
 }
@@ -42,12 +48,13 @@
   align-self: baseline;
 }
 
-.header__p {
-  font-size: 20px;
-  color: silver;
+.header__logo {
+  height: 100px;
+  width: 100px;
 }
 
 .navigace__ul {
+  flex-direction: row;
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -56,7 +63,23 @@
 
 nav li {
   font-size: 15px;
+  width: 200px;
+  height: 50px;
+  background-color: black;
   color: white;
+}
+nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li:hover {
+  text-decoration: underline;
 }
 
 .cover__foto {
