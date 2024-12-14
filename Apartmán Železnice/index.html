@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Apartmán Železnice</title>
+
+  <!-- odevzdání stage4 -->
+</head>
+<body>
+   <div class="container">
+    <section class="header">
+      <p class="header__p">Apartmán Železnice</p>
+      <nav class="navigace">
+        <ul class="navigace__ul">
+          <li class="navigace__li"><a href="#">Domů</a></li>
+          <li class="navigace__li"><a href="#">O nás</a></li>
+          <li class="navigace__li"><a href="#">Galerie</a></li>
+          <li class="navigace__li"><a href="#">Ceník</a></li>
+          <li class="navigace__li"><a href="#">Kalendář</a></li>
+          <li class="navigace__li"><a href="#">Rezervace</a></li>
+          <li class="navigace__li"><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="cover">
+        <img class="cover__foto"
+        src="images/cover-1000x660.JPG"
+        alt="coverfoto"
+        srcset="
+          images/cover-500x330.JPG 500w,
+          images/cover-1000x660.JPG 1000w,
+          images/cover.JPG 1500w
+        "
+        width="1000"
+        height="660">
+        <h1 class=" cover__h1">Jedinečné ubytování <br>v Českém ráji</h1>
+      </div>
+
+    </section>
+    <div class="blok">
+      <div class="blok__foto">
+        <picture>
+          <source
+            srcset="images/loznice-500x330.JPG"
+            media="(max-width: 600px)"
+          />
+
+          <source
+            srcset="images/loznice.JPG"
+            media="(min-width: 1000px)"
+          />
+
+          <img class="blok__img" src="images/loznice-1000x660.JPG">
+
+        </picture>
+      </div>
+    </div>
+
+    <div class="blok">
+        <h1 class="blok__h1">Apartmán Železnice</h1>
+        <p class="blok__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio magnam obcaecati consectetur magni earum labore, numquam quisquam eum velit eveniet harum dolores nam non, odio, deserunt quibusdam sit? Repudiandae, ad?</p>
+    </div>
+    <div class="blok">
+      <h1 class="blok__h1">Ubytování</h1>
+      <p class="blok__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio magnam obcaecati consectetur magni earum labore, numquam quisquam eum velit eveniet harum dolores nam non, odio, deserunt quibusdam sit? Repudiandae, ad?</p>
+    </div>
+
+    <div class="blok">
+      <h1 class="blok__h1">Vybavení</h1>
+      <ul class="blok_ul">
+        <li class="blok__li">Plně vybavená kuchyň</li>
+        <li class="blok__li">Venkovní terasa s možností grilování</li>
+        <li class="blok__li">Parkování</li>
+        <li class="blok__li">Vnitřní dětský koutek</li>
+        <li class="blok__li">Wi-fi</li>
+      </ul>
+    </div>
+
+    <div class="blok-2 blok-2--fotogalerie">
+      <h1 class="blok-2__h1">Prohlédněte si více fotografií</h1>
+      <section class="blok-2__fotogalerie">
+        
+        <figure class="blok-2__foto">
+        <img class="blok-2__img" src="images/pracovna.JPG">
+        </figure>
+
+        <figure class="blok-2__foto">
+        <img class="blok-2__img" src="images/koupelna.JPG" >
+        </figure>
+        
+        <figure class="blok-2__foto">
+        <img class="blok-2__img" src="images/kuchyn.JPG" >
+        </figure>
+
+        <figure class="blok-2__foto">
+        <img class="blok-2__img" src="images/JidelniStul.JPG" >
+        </figure>
+
+        <figure class="blok-2__foto">
+        <img class="blok-2__img" src="images/ObyvaciPokoj.JPG" >
+        </figure>
+
+        <figure class="blok-2__foto">
+        <img class="blok-2__img" src="images/zrcadlo.JPG" >
+        </figure>
+
+        <figure class="blok-2__foto">
+        <img class="blok-2__img" src="images/DetskyKoutek.JPG" >
+        </figure>
+
+        <figure class="blok-2__foto">
+        <img class="blok-2__img" src="images/OranzovaLoznice.JPG" >
+        </figure>
+      </section>
+    </div>
+    
+    <footer class="footer">
+      <a href="tel:+420739066960">
+        <img class="footer__icon" src="images/icons/phone.svg">
+      </a>
+      <a href="https://www.facebook.com/apartmanyzeleznice">
+        <img class="footer__icon" src="images/icons/facebook.svg">
+      </a>
+      <a href="https://www.instagram.com/apartman_zeleznice/?hl=cs">
+        <img class="footer__icon" src="images/icons/instagram.svg">
+      </a>
+    </footer>
+  </div>
+</body>
+</html>

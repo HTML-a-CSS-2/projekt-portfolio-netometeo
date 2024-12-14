@@ -1,0 +1,142 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(-webkit-min-content 1fr));
+  grid-template-columns: repeat(2, minmax(min-content 1fr));
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.6fr 0.05fr;
+  align-items: auto;
+  justify-items: auto;
+}
+
+.header {
+  grid-column-end: span 2;
+  background-color: black;
+}
+
+.navigace {
+  padding: 0.5rem;
+}
+
+.cover {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.blok {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  place-self: auto center;
+}
+
+.blok-2 {
+  grid-column-end: span 2;
+  background-color: black;
+  grid-column-start: 1;
+  place-self: auto;
+}
+
+.footer {
+  background-color: white;
+  grid-column: 1/span 2;
+  align-self: baseline;
+}
+
+.header__p {
+  font-size: 20px;
+  color: silver;
+}
+
+.navigace__ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+nav li {
+  font-size: 15px;
+  color: white;
+}
+
+.cover__foto {
+  width: 100%;
+  height: 100%;
+  padding-top: 12px;
+}
+
+.cover__h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.blok__h1 {
+  font-size: 20px;
+  color: beige;
+  padding: 10px;
+  text-align: center;
+}
+
+.blok__p {
+  font-size: 15px;
+  color: beige;
+  padding: 10px;
+  text-align: block;
+}
+
+.blok_ul {
+  list-style: none;
+}
+
+.blok__li {
+  font-size: 15px;
+  color: beige;
+}
+
+.blok__foto {
+  position: relative;
+  padding: 0%;
+}
+
+.blok__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blok-2__fotogalerie {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.blok-2__h1 {
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.blok__foto {
+  position: relative;
+  padding-top: 100%;
+}
+
+.blok-2__img {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer__icon {
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+}/*# sourceMappingURL=style.css.map */
